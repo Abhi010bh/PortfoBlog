@@ -1,5 +1,5 @@
 +++
-title = 'Fun, Pun and laughter'
+title = 'Fun, Pun and Opinion'
 date = 2023-12-08T09:59:02+05:30
 draft = false
 author='Abhishek B Haibatti'
