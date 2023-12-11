@@ -7,9 +7,10 @@ author='Abhishek B Haibatti'
 
 Happened to have a stroll in the market, quite a local one. Spare the sassy smartphones, don't think the diaspora has access to the charming lore of global news staples. But, boy do they have an elegantly stupid 'opinion' over everything. Heard the local vendor vent frustration over the Israel Gaza war, and thereof its butterfly effect over his pale business. The point could be, well maybe he was right or maybe he was write. But, to the left i just saw a hollow bark of wood, feigning strength unaware of the lack of density.
 
-And then it occurred to me, perhaps it was Democracy and its licensed autonomy, to have of course an 'opinion’. The aunties in the neighbourhood like always had an opinion, (although not on Bill the Gates) on Billa in the colony. Yeah as usual, the water was wet. My friend on the side lines confuses it for being judgemental, but i say they were very clearly having an opinion (driven by blatant emotions and bias). There even exists a more evolved school of thought which advocates for their opinions being the facts, ascertaining its validation during the very genesis of gossip.
-
+And then it occurred to me, perhaps it was Democracy and its licensed autonomy, to have of course an 'opinion’. The aunties in the neighbourhood like always had an opinion, (although not on Bill the Gates) on Billa in the colony.
 ![](https://i0.wp.com/kevinspear.com/wp-content/uploads/2017/11/3059-Cartoon.jpg?w=850&ssl=1)
+Yeah as usual, the water was wet. My friend on the side lines confuses it for being judgemental, but i say they were very clearly having an opinion (driven by blatant emotions and bias). There even exists a more evolved school of thought which advocates for their opinions being the facts, ascertaining its validation during the very genesis of gossip.
+
 
 Should this be alarming? No people. Sit back and relax as the society grows to be more opinionated over things it is less educated. The need to be foolish is evident and so is to have an unfinished picture. Got to stay relevant in all of its imbecility. The other day my brain had an opinion over someone else's something (It had to say my bowman's capsule was foolish). All while having zero to little understanding over the aspect concerned. So, I start to think, of the relevance of an opinion. The amount of headspace she garners, while being of little to no help. Uncooked, charred and raw, just with the seasoning to suit the abstract level of understanding its conceiver has.
 
