@@ -1,21 +1,18 @@
 baseURL = 'https://abhi010bh.github.io/PortfoBlog/'
 languageCode = 'en-us'
-author='Abhi'
+author='Abhishek Haibatti'
 paginate=3
 
 # ------------------------------
 theme = "paper"
-title = "Paper"
+title = "Literary Cradle"
 
 [params]
   color = 'linen'
 
-  twitter = 'nanxiaobei'
-  github = 'nanxiaobei'
-  instagram = 'nan.xiaobei'
 
-  
-  name = 'Abhi'
+  avatar = 'https://raw.githubusercontent.com/Abhi010bh/Abhi010bh.github.io/main/assets/Logos/AbhiLOGO.png'
+  name = 'Abhishek Haibatti'
   bio = 'Discover fresh context'
 # ------------------------------
 # needed to  render raw HTML (e.g. <sub>, <sup>, <kbd>, <mark>)
@@ -31,13 +28,19 @@ title = "Paper"
   [[menu.main]]
     identifier = "about"
     name = "About"
-    url = "/posts/"
+    url = "/about/"
     weight = 10
   [[menu.main]]
     identifier = "contact"
     name = "Contact"
     url = "/contact/"
     weight = 10
+
+  [[menu.main]]
+    identifier = "Portfolio Home"
+    name= "Portfolio Home"
+    url="https://abhi010bh.github.io/"
+    weight=10
 
 [taxonomies]
 category = "categories"
