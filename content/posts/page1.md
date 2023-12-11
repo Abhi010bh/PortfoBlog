@@ -16,6 +16,8 @@ Should this be alarming? No people. Sit back and relax as the society grows to b
 
 Does it matter? Nah. It's fun people. Playing Mr Knowledge, distributing validation certificates and finally perpetuating stupidity. But for the receiver? It's a broadcaster's joy. Watch as that sparrow, tries in all the narrow, to fly and to be adorable to this freak show. It does succeed however, just that it never flies. The aunties that i mentioned, funny how they too never flew. And those guy's at your schools, well their opinions are, classique. You could well call it-asinine.
 
+<img src="https://media.istockphoto.com/id/1329498093/vector/person-with-plank-on-head-drawing.jpg?s=612x612&w=0&k=20&c=yf0qeHGcf5_jn8qcsFdrHTlGwY2GgovZm3rkuXEttSM=" class="mx-auto max-w-sm max-h-sm">
+
 So juxtapose, lose out all the inhibitions, cut the shackles, let go of the chains. Cause your flight needs more than an opinion. So does this world. An educated, fully formed and integral, is what an opinion is. Rest all, as I come to discover, and as my friend from the side lines screamed (my brain calls him the heart), are judgements. Bang Bang, all wanna be judges of the law that never exists. Poor sparrow, should have looked at that Eagle, soaring high over the limits of (okay not the word again).Then again, don't be foolish to call your doctor’s opinion stupid, there lies that thin line of intellectual common sense. 
        
 That's enough shots fired using the barrel of hypocrisy. Thus I draw curtains to this oxymoronic blunt take. And people, don't let this opinion on opinions hinder you from having opinions. Being judgemental is the fun way, and who doesn't love an entertainment.
