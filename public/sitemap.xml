@@ -2,10 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/categories/</loc>
+    <loc>https://abhi010bh.github.io/PortfoBlog/posts/</loc>
+    <lastmod>2024-01-22T20:43:28+05:30</lastmod>
   </url><url>
-    <loc>https://example.org/</loc>
+    <loc>https://abhi010bh.github.io/PortfoBlog/posts/laxmi/</loc>
+    <lastmod>2024-01-22T20:43:28+05:30</lastmod>
   </url><url>
-    <loc>https://example.org/tags/</loc>
+    <loc>https://abhi010bh.github.io/PortfoBlog/posts/mongo/</loc>
+    <lastmod>2024-01-04T11:33:03+05:30</lastmod>
+  </url><url>
+    <loc>https://abhi010bh.github.io/PortfoBlog/posts/mern/cors/</loc>
+    <lastmod>2023-12-24T22:21:43+05:30</lastmod>
+  </url><url>
+    <loc>https://abhi010bh.github.io/PortfoBlog/posts/nodemon/</loc>
+    <lastmod>2023-12-18T00:13:30+05:30</lastmod>
+  </url><url>
+    <loc>https://abhi010bh.github.io/PortfoBlog/posts/cmd/</loc>
+    <lastmod>2023-12-14T22:01:26+05:30</lastmod>
+  </url><url>
+    <loc>https://abhi010bh.github.io/PortfoBlog/about/</loc>
+    <lastmod>2023-12-11T22:18:03+05:30</lastmod>
+  </url><url>
+    <loc>https://abhi010bh.github.io/PortfoBlog/</loc>
+    <lastmod>2023-12-11T22:16:25+05:30</lastmod>
+  </url><url>
+    <loc>https://abhi010bh.github.io/PortfoBlog/posts/page1/</loc>
+    <lastmod>2023-12-08T09:59:02+05:30</lastmod>
+  </url><url>
+    <loc>https://abhi010bh.github.io/PortfoBlog/categories/</loc>
+  </url><url>
+    <loc>https://abhi010bh.github.io/PortfoBlog/series/</loc>
+  </url><url>
+    <loc>https://abhi010bh.github.io/PortfoBlog/tags/</loc>
   </url>
 </urlset>

@@ -1,0 +1,354 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg: #faf8f1"
+  lang="en-us"
+>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>Laxmi - Literary Cradle</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  
+  <meta name="description" content="MATLAB Scripts for Electrostatics Point Charge Simulation % This script simulates the Electrostatic field % around the unit (1C) point charge clear all; close all; clc; k = 9e9; % Dielectric constant k = 1/(4*pi*epsilon0) Q = 1; % Charge Q = 1C % Select the range of coordinate values: x = -1:0.1:1; y = -1:0.1:1; z = -1:0.1:1; % Creating the 3D meshgrid for evaluating the field: [X, Y, Z] = meshgrid(x, y, z); % Assuming the charge is placed at the origin % distance is calculated r_squared = (X." />
+  <meta name="author" content="Abhishek Haibatti" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://abhi010bh.github.io/PortfoBlog/main.min.css" />
+
+  
+  
+  
+  
+  
+  <link rel="preload" as="image" href="https://abhi010bh.github.io/PortfoBlog/theme.png" />
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  <script
+    defer
+    src="https://abhi010bh.github.io/PortfoBlog/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  
+  
+
+  
+  <link rel="icon" href="https://abhi010bh.github.io/PortfoBlog/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://abhi010bh.github.io/PortfoBlog/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.120.4">
+
+  
+  
+  
+  
+  
+  <meta itemprop="name" content="Laxmi">
+<meta itemprop="description" content="MATLAB Scripts for Electrostatics Point Charge Simulation % This script simulates the Electrostatic field % around the unit (1C) point charge clear all; close all; clc; k = 9e9; % Dielectric constant k = 1/(4*pi*epsilon0) Q = 1; % Charge Q = 1C % Select the range of coordinate values: x = -1:0.1:1; y = -1:0.1:1; z = -1:0.1:1; % Creating the 3D meshgrid for evaluating the field: [X, Y, Z] = meshgrid(x, y, z); % Assuming the charge is placed at the origin % distance is calculated r_squared = (X."><meta itemprop="datePublished" content="2024-01-22T20:43:28+05:30" />
+<meta itemprop="dateModified" content="2024-01-22T20:43:28+05:30" />
+<meta itemprop="wordCount" content="214">
+<meta itemprop="keywords" content="" />
+  
+  <meta property="og:title" content="Laxmi" />
+<meta property="og:description" content="MATLAB Scripts for Electrostatics Point Charge Simulation % This script simulates the Electrostatic field % around the unit (1C) point charge clear all; close all; clc; k = 9e9; % Dielectric constant k = 1/(4*pi*epsilon0) Q = 1; % Charge Q = 1C % Select the range of coordinate values: x = -1:0.1:1; y = -1:0.1:1; z = -1:0.1:1; % Creating the 3D meshgrid for evaluating the field: [X, Y, Z] = meshgrid(x, y, z); % Assuming the charge is placed at the origin % distance is calculated r_squared = (X." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://abhi010bh.github.io/PortfoBlog/posts/laxmi/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-01-22T20:43:28+05:30" />
+<meta property="article:modified_time" content="2024-01-22T20:43:28+05:30" />
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Laxmi"/>
+<meta name="twitter:description" content="MATLAB Scripts for Electrostatics Point Charge Simulation % This script simulates the Electrostatic field % around the unit (1C) point charge clear all; close all; clc; k = 9e9; % Dielectric constant k = 1/(4*pi*epsilon0) Q = 1; % Charge Q = 1C % Select the range of coordinate values: x = -1:0.1:1; y = -1:0.1:1; z = -1:0.1:1; % Creating the 3D meshgrid for evaluating the field: [X, Y, Z] = meshgrid(x, y, z); % Assuming the charge is placed at the origin % distance is calculated r_squared = (X."/>
+
+  
+  
+  
+  <link rel="canonical" href="https://abhi010bh.github.io/PortfoBlog/posts/laxmi/" />
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center">
+  <div class="relative z-50 mr-auto flex items-center">
+    <a
+      class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold"
+      href="https://abhi010bh.github.io/PortfoBlog/"
+      >Literary Cradle</a
+    >
+    <div
+      class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+    <nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6">
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/PortfoBlog/about/"
+        >About</a
+      >
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/PortfoBlog/contact/"
+        >Contact</a
+      >
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="https://abhi010bh.github.io/"
+        >Portfolio Home</a
+      >
+      
+    </nav>
+    
+
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-16">
+    <h1 class="!my-0 pb-2.5">Laxmi</h1>
+
+    
+    <div class="text-sm antialiased opacity-60">
+      
+      <time>Jan 22, 2024</time>
+      
+      
+      
+      
+    </div>
+    
+  </header>
+
+  <section><h2 id="matlab-scripts-for-electrostatics">MATLAB Scripts for Electrostatics</h2>
+<h3 id="point-charge-simulation">Point Charge Simulation</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-matlab" data-lang="matlab"><span style="display:flex;"><span><span style="color:#75715e">% This script simulates the Electrostatic field</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% around the unit (1C) point charge</span>
+</span></span><span style="display:flex;"><span>clear all; close all; clc;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>k = <span style="color:#ae81ff">9e9</span>; <span style="color:#75715e">% Dielectric constant k = 1/(4*pi*epsilon0)</span>
+</span></span><span style="display:flex;"><span>Q = <span style="color:#ae81ff">1</span>;   <span style="color:#75715e">% Charge Q = 1C</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% Select the range of coordinate values:</span>
+</span></span><span style="display:flex;"><span>x = <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">0.1</span>:<span style="color:#ae81ff">1</span>; y = <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">0.1</span>:<span style="color:#ae81ff">1</span>; z = <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">0.1</span>:<span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% Creating the 3D meshgrid for evaluating the field:</span>
+</span></span><span style="display:flex;"><span>[X, Y, Z] = meshgrid(x, y, z);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% Assuming the charge is placed at the origin</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% distance is calculated</span>
+</span></span><span style="display:flex;"><span>r_squared = (X<span style="color:#f92672">.^</span><span style="color:#ae81ff">2</span> <span style="color:#f92672">+</span> Y<span style="color:#f92672">.^</span><span style="color:#ae81ff">2</span> <span style="color:#f92672">+</span> Z<span style="color:#f92672">.^</span><span style="color:#ae81ff">2</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% Calculating the x, y, and z components of E field:</span>
+</span></span><span style="display:flex;"><span>Ex = k <span style="color:#f92672">*</span> Q <span style="color:#f92672">*</span> X <span style="color:#f92672">./</span> r_squared;
+</span></span><span style="display:flex;"><span>Ey = k <span style="color:#f92672">*</span> Q <span style="color:#f92672">*</span> Y <span style="color:#f92672">./</span> r_squared;
+</span></span><span style="display:flex;"><span>Ez = k <span style="color:#f92672">*</span> Q <span style="color:#f92672">*</span> Z <span style="color:#f92672">./</span> r_squared;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% Magnitude of E field:</span>
+</span></span><span style="display:flex;"><span>E = k <span style="color:#f92672">*</span> Q <span style="color:#f92672">./</span> r_squared;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% Plotting the vector (E) field:</span>
+</span></span><span style="display:flex;"><span>figure, quiver3(X, Y, Z, Ex, Ey, Ez);
+</span></span><span style="display:flex;"><span>colormap default;
+</span></span><span style="display:flex;"><span>xlabel(<span style="color:#e6db74">&#39;X&#39;</span>); ylabel(<span style="color:#e6db74">&#39;Y&#39;</span>); zlabel(<span style="color:#e6db74">&#39;Z&#39;</span>);
+</span></span><span style="display:flex;"><span>title(<span style="color:#e6db74">&#39;3D Electric Field Due to Point Charge&#39;</span>);
+</span></span><span style="display:flex;"><span>axis equal;
+</span></span><span style="display:flex;"><span>grid on;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% Plotting the magnitude of the E field:</span>
+</span></span><span style="display:flex;"><span>figure, slice(X, Y, Z, log(E), [], [], <span style="color:#ae81ff">0</span>); <span style="color:#75715e">% taking slices along z=0</span>
+</span></span><span style="display:flex;"><span>shading interp;
+</span></span><span style="display:flex;"><span>colormap default;
+</span></span><span style="display:flex;"><span>colorbar;
+</span></span><span style="display:flex;"><span>xlabel(<span style="color:#e6db74">&#39;X&#39;</span>); ylabel(<span style="color:#e6db74">&#39;Y&#39;</span>); zlabel(<span style="color:#e6db74">&#39;Z&#39;</span>);
+</span></span><span style="display:flex;"><span>title(<span style="color:#e6db74">&#39;3D Electric Field Due to Point Charge&#39;</span>);
+</span></span><span style="display:flex;"><span>axis equal;
+</span></span><span style="display:flex;"><span>grid on;
+</span></span></code></pre></div></section>
+
+  
+  
+
+  
+  
+  
+  
+  <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+    
+    
+    <a
+      class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
+      href="https://abhi010bh.github.io/PortfoBlog/posts/mongo/"
+      ><span>Mongo</span><span class="ml-1.5">→</span></a
+    >
+    
+  </nav>
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+</article>
+
+
+    </main>
+
+    <footer
+  class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"
+>
+  <div class="mr-auto">
+    &copy; 2024
+    <a class="link" href="https://abhi010bh.github.io/PortfoBlog/">Literary Cradle</a>
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >Powered by Hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >✎ Paper</a
+  >
+</footer>
+
+  </body>
+</html>

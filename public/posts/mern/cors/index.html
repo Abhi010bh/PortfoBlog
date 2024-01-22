@@ -1,0 +1,409 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg: #faf8f1"
+  lang="en-us"
+>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>Cors - Literary Cradle</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  
+  <meta name="description" content="Same-Origin Policy (SOP) Definition:
+Fundamental security policy in web browsers. Restricts web pages from making requests to different origins (domains, protocols, ports) than the one that served the web page. Purpose:
+Prevents malicious scripts from accessing or manipulating data across different origins. Impact:
+Blocks cross-origin requests by default to ensure security. Workarounds:
+CORS (Cross-Origin Resource Sharing) headers on the server-side explicitly allow certain origins to access resources. Proxy servers can be used to make requests appear to come from the same origin." />
+  <meta name="author" content="Abhishek Haibatti" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://abhi010bh.github.io/PortfoBlog/main.min.css" />
+
+  
+  
+  
+  
+  
+  <link rel="preload" as="image" href="https://abhi010bh.github.io/PortfoBlog/theme.png" />
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  <script
+    defer
+    src="https://abhi010bh.github.io/PortfoBlog/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  
+  
+
+  
+  <link rel="icon" href="https://abhi010bh.github.io/PortfoBlog/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://abhi010bh.github.io/PortfoBlog/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.120.4">
+
+  
+  
+  
+  
+  
+  <meta itemprop="name" content="Cors">
+<meta itemprop="description" content="Same-Origin Policy (SOP) Definition:
+Fundamental security policy in web browsers. Restricts web pages from making requests to different origins (domains, protocols, ports) than the one that served the web page. Purpose:
+Prevents malicious scripts from accessing or manipulating data across different origins. Impact:
+Blocks cross-origin requests by default to ensure security. Workarounds:
+CORS (Cross-Origin Resource Sharing) headers on the server-side explicitly allow certain origins to access resources. Proxy servers can be used to make requests appear to come from the same origin."><meta itemprop="datePublished" content="2023-12-24T22:21:43+05:30" />
+<meta itemprop="dateModified" content="2023-12-24T22:21:43+05:30" />
+<meta itemprop="wordCount" content="203">
+<meta itemprop="keywords" content="" />
+  
+  <meta property="og:title" content="Cors" />
+<meta property="og:description" content="Same-Origin Policy (SOP) Definition:
+Fundamental security policy in web browsers. Restricts web pages from making requests to different origins (domains, protocols, ports) than the one that served the web page. Purpose:
+Prevents malicious scripts from accessing or manipulating data across different origins. Impact:
+Blocks cross-origin requests by default to ensure security. Workarounds:
+CORS (Cross-Origin Resource Sharing) headers on the server-side explicitly allow certain origins to access resources. Proxy servers can be used to make requests appear to come from the same origin." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://abhi010bh.github.io/PortfoBlog/posts/mern/cors/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-12-24T22:21:43+05:30" />
+<meta property="article:modified_time" content="2023-12-24T22:21:43+05:30" />
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Cors"/>
+<meta name="twitter:description" content="Same-Origin Policy (SOP) Definition:
+Fundamental security policy in web browsers. Restricts web pages from making requests to different origins (domains, protocols, ports) than the one that served the web page. Purpose:
+Prevents malicious scripts from accessing or manipulating data across different origins. Impact:
+Blocks cross-origin requests by default to ensure security. Workarounds:
+CORS (Cross-Origin Resource Sharing) headers on the server-side explicitly allow certain origins to access resources. Proxy servers can be used to make requests appear to come from the same origin."/>
+
+  
+  
+  
+  <link rel="canonical" href="https://abhi010bh.github.io/PortfoBlog/posts/mern/cors/" />
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center">
+  <div class="relative z-50 mr-auto flex items-center">
+    <a
+      class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold"
+      href="https://abhi010bh.github.io/PortfoBlog/"
+      >Literary Cradle</a
+    >
+    <div
+      class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+    <nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6">
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/PortfoBlog/about/"
+        >About</a
+      >
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/PortfoBlog/contact/"
+        >Contact</a
+      >
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="https://abhi010bh.github.io/"
+        >Portfolio Home</a
+      >
+      
+    </nav>
+    
+
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-16">
+    <h1 class="!my-0 pb-2.5">Cors</h1>
+
+    
+    <div class="text-sm antialiased opacity-60">
+      
+      <time>Dec 24, 2023</time>
+      
+      
+      
+      
+    </div>
+    
+  </header>
+
+  <section><h2 id="same-origin-policy-sop">Same-Origin Policy (SOP)</h2>
+<ul>
+<li>
+<p><strong>Definition:</strong></p>
+<ul>
+<li>Fundamental security policy in web browsers.</li>
+<li>Restricts web pages from making requests to different origins (domains, protocols, ports) than the one that served the web page.</li>
+</ul>
+</li>
+<li>
+<p><strong>Purpose:</strong></p>
+<ul>
+<li>Prevents malicious scripts from accessing or manipulating data across different origins.</li>
+</ul>
+</li>
+<li>
+<p><strong>Impact:</strong></p>
+<ul>
+<li>Blocks cross-origin requests by default to ensure security.</li>
+</ul>
+</li>
+<li>
+<p><strong>Workarounds:</strong></p>
+<ul>
+<li>CORS (Cross-Origin Resource Sharing) headers on the server-side explicitly allow certain origins to access resources.</li>
+<li>Proxy servers can be used to make requests appear to come from the same origin.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="cross-origin-requests-and-handling-errors">Cross-Origin Requests and Handling Errors</h2>
+<ul>
+<li>
+<p><strong>Error: Undefined Request Body (POST and PUT Requests):</strong></p>
+<ul>
+<li>Occurs when server-side code fails to handle or parse data sent in the request body.</li>
+</ul>
+</li>
+<li>
+<p><strong>Solutions:</strong></p>
+<ul>
+<li><strong>CORS Headers:</strong>
+<ul>
+<li>Configure server-side API to include appropriate CORS headers.</li>
+</ul>
+</li>
+<li><strong>Proxy Servers:</strong>
+<ul>
+<li>Use a server-side proxy to make requests appear to come from the same origin.</li>
+</ul>
+</li>
+<li><strong>Data Handling:</strong>
+<ul>
+<li>Ensure proper parsing and handling of request body data.</li>
+<li>Libraries like <code>body-parser</code> in Node.js help parse incoming request bodies.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Preventing Errors and SOP Issues:</strong></p>
+<ul>
+<li>Addressing SOP restrictions:
+<ul>
+<li>Implement CORS headers on the server-side.</li>
+<li>Use appropriate access controls to permit specific origins.</li>
+</ul>
+</li>
+<li>Properly handling request data:
+<ul>
+<li>Validate and parse incoming request bodies to prevent &ldquo;undefined&rdquo; errors.</li>
+<li>Handle errors gracefully to provide meaningful feedback to users.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+
+  
+  
+
+  
+  
+  
+  
+  <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+    
+    <a
+      class="flex w-1/2 items-center rounded-l-md p-6 pr-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
+      href="https://abhi010bh.github.io/PortfoBlog/posts/mongo/"
+      ><span class="mr-1.5">←</span><span>Mongo</span></a
+    >
+    
+    
+    <a
+      class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
+      href="https://abhi010bh.github.io/PortfoBlog/posts/nodemon/"
+      ><span>Nodemon</span><span class="ml-1.5">→</span></a
+    >
+    
+  </nav>
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+</article>
+
+
+    </main>
+
+    <footer
+  class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"
+>
+  <div class="mr-auto">
+    &copy; 2024
+    <a class="link" href="https://abhi010bh.github.io/PortfoBlog/">Literary Cradle</a>
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >Powered by Hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >✎ Paper</a
+  >
+</footer>
+
+  </body>
+</html>

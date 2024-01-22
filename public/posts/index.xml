@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog on Literary Cradle</title>
-    <link>https://abhi010bh.github.io/PortfoBlog/</link>
-    <description>Recent content in Blog on Literary Cradle</description>
+    <title>Literary Cradle</title>
+    <link>https://abhi010bh.github.io/PortfoBlog/posts/</link>
+    <description>Recent content on Literary Cradle</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 Dec 2023 22:16:25 +0530</lastBuildDate>
-    <atom:link href="https://abhi010bh.github.io/PortfoBlog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 Jan 2024 20:43:28 +0530</lastBuildDate>
+    <atom:link href="https://abhi010bh.github.io/PortfoBlog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Laxmi</title>
       <link>https://abhi010bh.github.io/PortfoBlog/posts/laxmi/</link>
@@ -47,14 +47,6 @@ CORS (Cross-Origin Resource Sharing) headers on the server-side explicitly allow
       <pubDate>Thu, 14 Dec 2023 22:01:26 +0530</pubDate>
       <guid>https://abhi010bh.github.io/PortfoBlog/posts/cmd/</guid>
       <description>NPM/Yarn Commands Installing Dependencies - `npm install &amp;lt;package&amp;gt;`: Installs a package. - `npm install`: Installs all dependencies listed in `package.json`. - `yarn add &amp;lt;package&amp;gt;`: Adds a package using Yarn. Running Scripts - `npm start`: Runs the script defined as &amp;#34;start&amp;#34; in `package.json`. - `npm run &amp;lt;script-name&amp;gt;`: Executes a custom script defined in `package.json`. - `yarn start`: Runs the start script using Yarn. Managing Dependencies - `npm uninstall &amp;lt;package&amp;gt;`: Uninstalls a package.</description>
-    </item>
-    <item>
-      <title>About</title>
-      <link>https://abhi010bh.github.io/PortfoBlog/about/</link>
-      <pubDate>Mon, 11 Dec 2023 22:18:03 +0530</pubDate>
-      <guid>https://abhi010bh.github.io/PortfoBlog/about/</guid>
-      <description>Hey there, Exploring the learning domain, I currently, perceive my Bachelors degree in Computer Science &amp;amp; Engineering. Equiped with a decent knowledge in C, C++, Java, programming seems fun.
-Apart from the student duties,I find a way to toggle between a few hobbies. Got a knack for poetry, my brush strokes are decent too. My free time spans around movies,books and friends. People with the zeal to be happy &amp;amp; create joy, inspire me.</description>
     </item>
     <item>
       <title>Fun, Pun and Opinion</title>

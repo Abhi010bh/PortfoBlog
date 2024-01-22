@@ -1,0 +1,388 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg: #faf8f1"
+  lang="en-us"
+>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>Nodemon - Literary Cradle</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  
+  <meta name="description" content="Setting up Nodemon in a Node.js Application Installation Installation: Use npm (Node Package Manager) to install Nodemon globally or locally within your project:
+# Install Nodemon globally (recommended for convenience) npm install -g nodemon # Or install Nodemon locally within your project (for project-specific use) npm install nodemon --save-dev Usage Usage: Once installed, you can start your Node.js server using Nodemon. Instead of node server.js, you&rsquo;ll use nodemon server.js to monitor for file changes and restart the server automatically." />
+  <meta name="author" content="Abhishek Haibatti" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://abhi010bh.github.io/PortfoBlog/main.min.css" />
+
+  
+  
+  
+  
+  
+  <link rel="preload" as="image" href="https://abhi010bh.github.io/PortfoBlog/theme.png" />
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  <script
+    defer
+    src="https://abhi010bh.github.io/PortfoBlog/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  
+  
+
+  
+  <link rel="icon" href="https://abhi010bh.github.io/PortfoBlog/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://abhi010bh.github.io/PortfoBlog/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.120.4">
+
+  
+  
+  
+  
+  
+  <meta itemprop="name" content="Nodemon">
+<meta itemprop="description" content="Setting up Nodemon in a Node.js Application Installation Installation: Use npm (Node Package Manager) to install Nodemon globally or locally within your project:
+# Install Nodemon globally (recommended for convenience) npm install -g nodemon # Or install Nodemon locally within your project (for project-specific use) npm install nodemon --save-dev Usage Usage: Once installed, you can start your Node.js server using Nodemon. Instead of node server.js, you&rsquo;ll use nodemon server.js to monitor for file changes and restart the server automatically."><meta itemprop="datePublished" content="2023-12-18T00:13:30+05:30" />
+<meta itemprop="dateModified" content="2023-12-18T00:13:30+05:30" />
+<meta itemprop="wordCount" content="258">
+<meta itemprop="keywords" content="" />
+  
+  <meta property="og:title" content="Nodemon" />
+<meta property="og:description" content="Setting up Nodemon in a Node.js Application Installation Installation: Use npm (Node Package Manager) to install Nodemon globally or locally within your project:
+# Install Nodemon globally (recommended for convenience) npm install -g nodemon # Or install Nodemon locally within your project (for project-specific use) npm install nodemon --save-dev Usage Usage: Once installed, you can start your Node.js server using Nodemon. Instead of node server.js, you&rsquo;ll use nodemon server.js to monitor for file changes and restart the server automatically." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://abhi010bh.github.io/PortfoBlog/posts/nodemon/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-12-18T00:13:30+05:30" />
+<meta property="article:modified_time" content="2023-12-18T00:13:30+05:30" />
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Nodemon"/>
+<meta name="twitter:description" content="Setting up Nodemon in a Node.js Application Installation Installation: Use npm (Node Package Manager) to install Nodemon globally or locally within your project:
+# Install Nodemon globally (recommended for convenience) npm install -g nodemon # Or install Nodemon locally within your project (for project-specific use) npm install nodemon --save-dev Usage Usage: Once installed, you can start your Node.js server using Nodemon. Instead of node server.js, you&rsquo;ll use nodemon server.js to monitor for file changes and restart the server automatically."/>
+
+  
+  
+  
+  <link rel="canonical" href="https://abhi010bh.github.io/PortfoBlog/posts/nodemon/" />
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center">
+  <div class="relative z-50 mr-auto flex items-center">
+    <a
+      class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold"
+      href="https://abhi010bh.github.io/PortfoBlog/"
+      >Literary Cradle</a
+    >
+    <div
+      class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+    <nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6">
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/PortfoBlog/about/"
+        >About</a
+      >
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/PortfoBlog/contact/"
+        >Contact</a
+      >
+      
+      <a
+        class="block text-center text-2xl leading-[5rem] lg:text-base lg:font-normal"
+        href="https://abhi010bh.github.io/"
+        >Portfolio Home</a
+      >
+      
+    </nav>
+    
+
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-16">
+    <h1 class="!my-0 pb-2.5">Nodemon</h1>
+
+    
+    <div class="text-sm antialiased opacity-60">
+      
+      <time>Dec 18, 2023</time>
+      
+      
+      
+      
+    </div>
+    
+  </header>
+
+  <section><h2 id="setting-up-nodemon-in-a-nodejs-application">Setting up Nodemon in a Node.js Application</h2>
+<h3 id="installation">Installation</h3>
+<ol>
+<li><strong>Installation:</strong>
+<ul>
+<li>
+<p>Use npm (Node Package Manager) to install Nodemon globally or locally within your project:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Install Nodemon globally (recommended for convenience)</span>
+</span></span><span style="display:flex;"><span>npm install -g nodemon
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Or install Nodemon locally within your project (for project-specific use)</span>
+</span></span><span style="display:flex;"><span>npm install nodemon --save-dev
+</span></span></code></pre></div></li>
+</ul>
+</li>
+</ol>
+<h3 id="usage">Usage</h3>
+<ol start="2">
+<li><strong>Usage:</strong>
+<ul>
+<li>
+<p>Once installed, you can start your Node.js server using Nodemon. Instead of <code>node server.js</code>, you&rsquo;ll use <code>nodemon server.js</code> to monitor for file changes and restart the server automatically.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nodemon server.js
+</span></span></code></pre></div></li>
+</ul>
+</li>
+</ol>
+<h3 id="configuration-optional">Configuration (Optional)</h3>
+<ol start="3">
+<li><strong>Configuration:</strong>
+<ul>
+<li>
+<p>Create a <code>nodemon.json</code> file in your project&rsquo;s root directory for custom configuration settings. This file allows you to define specific configurations for Nodemon, such as watching specific directories, ignoring certain files, setting delay before restart, etc.</p>
+<p>Example <code>nodemon.json</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;verbose&#34;</span>: <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;watch&#34;</span>: [<span style="color:#e6db74">&#34;src&#34;</span>, <span style="color:#e6db74">&#34;lib&#34;</span>],
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;ignore&#34;</span>: [<span style="color:#e6db74">&#34;*.test.js&#34;</span>, <span style="color:#e6db74">&#34;node_modules&#34;</span>],
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;delay&#34;</span>: <span style="color:#e6db74">&#34;1000&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;execMap&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;js&#34;</span>: <span style="color:#e6db74">&#34;node --inspect&#34;</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div></li>
+</ul>
+</li>
+</ol>
+<h3 id="integration-with-packagejson-scripts-optional-but-recommended">Integration with <code>package.json</code> Scripts (Optional but Recommended)</h3>
+<ol start="4">
+<li><strong>Integration with package.json:</strong>
+<ul>
+<li>
+<p>In your <code>package.json</code> file, you can create custom scripts that use Nodemon for starting your server. This simplifies the command and ensures consistency across your team or project.</p>
+<p>Example <code>package.json</code> scripts:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;scripts&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;start&#34;</span>: <span style="color:#e6db74">&#34;nodemon server.js&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;dev&#34;</span>: <span style="color:#e6db74">&#34;nodemon --watch src server.js&#34;</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>Running <code>npm start</code> or <code>npm run dev</code> (as per the example above) executes the associated Nodemon command specified in the scripts.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p>This setup allows Nodemon to watch for changes in your Node.js application files (e.g., <code>.js</code>, <code>.json</code>, <code>.html</code>, etc.) and automatically restart the server whenever it detects modifications, providing a smoother development experience. Adjust the configurations and commands according to your specific project needs.</p>
+</section>
+
+  
+  
+
+  
+  
+  
+  
+  <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+    
+    <a
+      class="flex w-1/2 items-center rounded-l-md p-6 pr-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
+      href="https://abhi010bh.github.io/PortfoBlog/posts/mern/cors/"
+      ><span class="mr-1.5">←</span><span>Cors</span></a
+    >
+    
+    
+    <a
+      class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
+      href="https://abhi010bh.github.io/PortfoBlog/posts/cmd/"
+      ><span>Development helps</span><span class="ml-1.5">→</span></a
+    >
+    
+  </nav>
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+</article>
+
+
+    </main>
+
+    <footer
+  class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"
+>
+  <div class="mr-auto">
+    &copy; 2024
+    <a class="link" href="https://abhi010bh.github.io/PortfoBlog/">Literary Cradle</a>
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >Powered by Hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >✎ Paper</a
+  >
+</footer>
+
+  </body>
+</html>
