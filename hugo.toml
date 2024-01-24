@@ -5,7 +5,7 @@ paginate=3
 
 # ------------------------------
 theme = "paper"
-title = "Literary Cradle"
+title = "AB Code & Verses"
 
 [params]
   color = 'linen'
@@ -13,7 +13,9 @@ title = "Literary Cradle"
 
  
   name = 'Abhishek Haibatti'
-  bio = 'Discover fresh context'
+  bio = """Hi, welcome to my Blogsite.
+          Discover fresh content."""
+
 # ------------------------------
 # needed to  render raw HTML (e.g. <sub>, <sup>, <kbd>, <mark>)
 [markup]
